@@ -5,7 +5,7 @@ import { playground } from "@colyseus/playground";
 /**
  * Import your Room files
  */
-import { MyRoom } from "./rooms/MyRoom";
+import { MemoryRoom } from "@natewilcox/memory-server";
 
 export default config({
 
@@ -13,7 +13,8 @@ export default config({
         /**
          * Define your room handlers:
          */
-        gameServer.define('my_room', MyRoom);
+        console.log("creating memory room");
+        gameServer.define('memory_room', MemoryRoom);
 
     },
 
