@@ -6,6 +6,7 @@ import { playground } from "@colyseus/playground";
  * Import your Room files
  */
 import { MemoryRoom } from "@natewilcox/memory-server";
+import { PrivateRoom, PublicRoom } from "@natewilcox/tic-tac-toe-server";
 
 export default config({
 
@@ -13,8 +14,12 @@ export default config({
         /**
          * Define your room handlers:
          */
-        console.log("creating memory room");
-        gameServer.define('memory_room', MemoryRoom);
+        // console.log("creating memory room");
+        // gameServer.define('memory_room', MemoryRoom);
+
+        console.log('Configuring TIC-TAC-TOE rooms....');
+        gameServer.define('tictactoe_public_room', PublicRoom);
+        gameServer.define('tictactoe_private_room', PrivateRoom);
 
     },
 
