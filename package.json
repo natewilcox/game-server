@@ -35,7 +35,7 @@
     "@colyseus/playground": "^0.15.3",
     "@colyseus/tools": "^0.15.0",
     "@natewilcox/memory-server": "^1.0.3",
-    "@natewilcox/tic-tac-toe-server": "^0.0.56",
+    "@natewilcox/tic-tac-toe-server": "^0.0.57",
     "colyseus": "^0.15.57",
     "express": "^4.18.2"
   }
