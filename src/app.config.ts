@@ -15,7 +15,7 @@ export default config({
          * Define your room handlers:
          */
         console.log("creating memory room");
-        gameServer.define('memory_room', MemoryRoom);
+        //gameServer.define('memory_room', MemoryRoom);
 
         console.log('Configuring TIC-TAC-TOE rooms....');
         gameServer.define('tictactoe_public_room', PublicRoom);
