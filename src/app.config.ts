@@ -1,12 +1,12 @@
 import config from "@colyseus/tools";
 import { monitor } from "@colyseus/monitor";
 import { playground } from "@colyseus/playground";
-
 /**
  * Import your Room files
  */
-import { MemoryRoom } from "@natewilcox/memory-server";
-import { PrivateRoom, PublicRoom } from "@natewilcox/tic-tac-toe-server";
+// import { MemoryRoom } from "@natewilcox/memory-server";
+// import { PrivateRoom, PublicRoom } from "@natewilcox/tic-tac-toe-server";
+import { BattleRoyaleRoom } from "@natewilcox/zelda-battle-server";
 
 export default config({
 
@@ -14,13 +14,14 @@ export default config({
         /**
          * Define your room handlers:
          */
-        console.log("creating memory room");
-        //gameServer.define('memory_room', MemoryRoom);
+        // console.log("creating memory room");
+        // gameServer.define('memory_room', MemoryRoom);
 
-        console.log('Configuring TIC-TAC-TOE rooms....');
-        gameServer.define('tictactoe_public_room', PublicRoom);
-        gameServer.define('tictactoe_private_room', PrivateRoom);
+        // console.log('Configuring TIC-TAC-TOE rooms....');
+        // gameServer.define('tictactoe_public_room', PublicRoom);
+        // gameServer.define('tictactoe_private_room', PrivateRoom);
 
+        gameServer.define('room_1', BattleRoyaleRoom);
     },
 
     initializeExpress: (app) => {
