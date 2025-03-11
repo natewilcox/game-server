@@ -6,7 +6,7 @@ import { playground } from "@colyseus/playground";
  */
 // import { MemoryRoom } from "@natewilcox/memory-server";
 // import { PrivateRoom, PublicRoom } from "@natewilcox/tic-tac-toe-server";
-import { BattleRoyaleRoom } from "@natewilcox/zelda-battle-server";
+//import { BattleRoyaleRoom } from "@natewilcox/zelda-battle-server";
 
 export default config({
 
@@ -21,7 +21,7 @@ export default config({
         // gameServer.define('tictactoe_public_room', PublicRoom);
         // gameServer.define('tictactoe_private_room', PrivateRoom);
 
-        gameServer.define('room_1', BattleRoyaleRoom);
+        //gameServer.define('room_1', BattleRoyaleRoom);
     },
 
     initializeExpress: (app) => {
