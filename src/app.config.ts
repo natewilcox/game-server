@@ -13,7 +13,6 @@ export default config({
         /**
          * Define your room handlers:
          */
-        console.log("register")
         gameServer.define('room_1', BattleRoyaleRoom);
 
     },
